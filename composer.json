@@ -1,0 +1,17 @@
+{
+    "name": "fed/std-images",
+    "type": "ewma-module",
+    "description": "ewma images",
+    "authors": [
+        {
+            "name": "fed",
+            "email": "ewmafw@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "fed/ewma-module-installer-plugin": "~0.0.1",
+        "fed/plugins-fancybox3": "^0.1",
+        "intervention/image": "^2.3"
+    }
+}

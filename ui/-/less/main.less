@@ -1,0 +1,64 @@
+// head {
+@import "../../../../css/std/-/less/main.less";
+
+@__nodeId__: ~"std_images_ui__main";
+// }
+
+.@{__nodeId__} {
+
+    .info {
+
+        .model_pack {
+            float: left;
+            padding: 5px 10px;
+            background-color: #5E1598;
+            color: #EC9AF1;
+        }
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+
+        .image {
+            position: relative;
+            margin: 2px;
+
+            &.hover {
+
+                .delete_button {
+                    opacity: 0.6;
+                }
+            }
+
+            &.ui-sortable-helper {
+
+                .delete_button {
+                    display: none;
+                }
+            }
+
+            .delete_button {
+                cursor: pointer;
+                position: absolute;
+                width: 100%;
+                box-sizing: border-box;
+                bottom: 0;
+                padding: 10px;
+                background-color: #FFFFFF;
+                color: #404040;
+                text-align: center;
+                opacity: 0;
+                transition: opacity .2s;
+
+                &.hover {
+                    background-color: #000000;
+                    color: #FF8469;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+
+}

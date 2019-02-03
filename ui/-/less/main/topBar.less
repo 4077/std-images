@@ -1,0 +1,91 @@
+// head {
+@import "../../../../../css/std/-/less/main.less";
+
+@__nodeId__: ~"std_images_ui__main_topBar";
+// }
+
+.@{__nodeId__} {
+    display: flex;
+    align-items: center;
+
+    .button() {
+        .__button;
+        .small;
+
+        display: flex;
+        align-items: center;
+
+        .icon {
+            color: #606060;
+            font-size: 14px;
+        }
+
+        .label {
+            margin-left: 7px;
+        }
+
+        &:hover {
+
+            .icon {
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .upload_button {
+        .button;
+        .blue;
+    }
+
+    .camera_button {
+        .button;
+        .orange;
+    }
+
+    .input {
+        flex-grow: 1;
+
+        input {
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 3px 5px !important;
+            border: 1px solid #B1B1B1;
+            border-radius: 3px;
+
+            &:focus {
+                border-color: #606060;
+            }
+        }
+    }
+
+    .click_mode_button {
+        .button;
+        .blue;
+
+        margin-left: 5px;
+        width: 14px;
+
+        &.open {
+
+            .open {
+                display: block;
+            }
+
+            .select {
+                display: none;
+            }
+        }
+
+        &.select {
+
+            .open {
+                display: none;
+            }
+
+            .select {
+                display: block;
+            }
+        }
+    }
+}

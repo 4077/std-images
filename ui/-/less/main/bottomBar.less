@@ -1,0 +1,88 @@
+// head {
+@import "../../../../../css/std/-/less/main.less";
+
+@__nodeId__: ~"std_images_ui__main_bottomBar";
+// }
+
+.@{__nodeId__} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    .left {
+        display: flex;
+        flex-wrap: nowrap;
+
+        .button {
+            .__button;
+            .small;
+
+            float: none;
+
+            &.copy {
+                .blue;
+            }
+
+            &.paste {
+                .purple;
+            }
+
+            &.delete {
+                .red;
+            }
+
+            &.disabled {
+                cursor: default;
+                background: #FBFBFB;
+                color: #B1B1B1;
+                border: 1px solid #E4E4E4;
+
+                &:hover {
+                    background: #FBFBFB;
+                    color: #B1B1B1;
+                    border: 1px solid #E4E4E4;
+                }
+
+                &:active {
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-wrap: nowrap;
+
+        .button {
+            cursor: pointer;
+            margin: 10px;
+            color: #686868;
+            white-space: nowrap;
+
+            &:hover {
+                text-decoration: underline;
+                color: #404040;
+            }
+
+            &.disabled {
+                cursor: default;
+                color: #E0E0E0;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                &.buffer {
+
+                    .count {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
