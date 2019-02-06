@@ -20,7 +20,7 @@ class Version extends \Schema
             $table->smallInteger('height')->default(0)->unsigned();
 
             $table->index('image_id');
-            $table->index(\DB::raw('query(8)'));
+            $table->index([\DB::raw('`query`(8)')], 'std_images_query');
         };
     }
 }
