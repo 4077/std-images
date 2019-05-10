@@ -81,6 +81,10 @@ class Xhr extends \Controller
 
                         $buffer = &$this->s('~:buffer', []);
 
+                        if (null === $buffer) {
+                            $buffer = [];
+                        }
+
                         $bufferBefore = $buffer;
 
                         $buffer = array_diff($buffer, $selection);
