@@ -187,7 +187,7 @@ class Xhr extends \Controller
 
             //
 
-            $config = dataSets()->get('config/std/images');
+            $config = dataSets()->get('modules/std-images');
 
             $envId = app()->getEnv();
 

@@ -40,7 +40,7 @@ class Saver
     {
         $this->sourcePath = $path;
 
-        $config = dataSets()->get('config/std/images');
+        $config = dataSets()->get('modules/std-images');
 
         $envId = app()->getEnv();
 
