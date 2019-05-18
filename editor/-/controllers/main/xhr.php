@@ -199,7 +199,7 @@ class Xhr extends \Controller
 
             //
 
-            $canvas = \Intervention\Image\ImageManagerStatic::canvas($canvasWidth, $canvasHeight, '#ffffff');
+            $canvas = $manager->canvas($canvasWidth, $canvasHeight, '#ffffff');
 
             $canvas->insert($image, 'top-left', $offsetLeft, $offsetTop);
 
