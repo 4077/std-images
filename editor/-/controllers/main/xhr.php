@@ -195,7 +195,7 @@ class Xhr extends \Controller
 
             $manager = new \Intervention\Image\ImageManager(['driver' => $driver]);
 
-            $image = $manager->make($version->file_path);
+            $image = $manager->make(public_path($version->file_path));
 
             //
 
